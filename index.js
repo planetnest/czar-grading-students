@@ -1,5 +1,5 @@
 const gradeList = (list) => {
-
+  return list.map(s => grade(s));
 }
 
 const round = score => {
