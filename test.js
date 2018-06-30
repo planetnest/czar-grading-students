@@ -1,5 +1,5 @@
 describe('Grading system test', () => {
-  const grad3 = require('./');
+  const grade = require('./');
 
   it('leaves < 38 numbers unchanged', () => {
     expect(grade(38)).toBe(38);
