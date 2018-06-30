@@ -6,6 +6,15 @@ describe('Grading system test', () => {
     expect(grade(29)).toBe(29);
   });
 
+  it('leaves number unchanged if further than 2 away from next nultiple of 5', () => {
+    expect(grade(72)).toBe(72);
+    expect(grade(61)).toBetoBe(61);
+  });
+
+  it("leaves number unchanged if it's a nultiple of 5", () => {
+    expect(grade(50)).toBe(50);
+  });
+
   it('rounds to nearest multiple of 5', () => {
     expect(grade(84)).toBe(85);
     expect(grade(43)).toBe(45);
