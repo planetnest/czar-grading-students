@@ -2,12 +2,13 @@ describe('Grading system test', () => {
   const grade = require('./');
 
   it('leaves < 38 numbers unchanged', () => {
-    expect(grade(38)).toBe(38);
+    expect(grade(37)).toBe(37);
     expect(grade(29)).toBe(29);
   });
 
   it('rounds to nearest multiple of 5', () => {
     expect(grade(84)).toBe(85);
+    expect(grade(43)).toBe(45);
   });
 
   it('returns array for array input', () => {
