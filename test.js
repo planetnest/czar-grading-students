@@ -8,7 +8,7 @@ describe('Grading system test', () => {
 
   it('leaves number unchanged if further than 2 away from next nultiple of 5', () => {
     expect(grade(72)).toBe(72);
-    expect(grade(61)).toBetoBe(61);
+    expect(grade(61)).toBe(61);
   });
 
   it("leaves number unchanged if it's a nultiple of 5", () => {
